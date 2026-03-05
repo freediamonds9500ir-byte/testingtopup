@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garena Free Fire - Top Up | NamaStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Nama<span>Store</span></h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="game-info">
+            <img src="assets/b.jpeg" alt="Free Fire" class="game-banner">
+            <div class="game-text">
+                <h2>Free Fire</h2>
+                <p>Proses Instant 24 Jam Otomatis</p>
+            </div>
+        </section>
+
+        <form id="topup-form">
+            <div class="card">
+                <div class="card-header">
+                    <span class="step-num">1</span>
+                    <h3>Masukkan Player ID</h3>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="number" id="player_id" placeholder="Masukkan ID" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="step-num">2</span>
+                    <h3>Pilih Nominal</h3>
+                </div>
+                <div class="card-body">
+                    <div class="grid-nominal">
+                        <label class="item-nominal">
+                            <input type="radio" name="nominal" value="50_dm" required>
+                            <div class="item-content">
+                                <span class="item-name">50 Diamonds</span>
+                                <span class="item-price">Rp 8.000</span>
+                            </div>
+                        </label>
+                        <label class="item-nominal">
+                            <input type="radio" name="nominal" value="140_dm">
+                            <div class="item-content">
+                                <span class="item-name">140 Diamonds</span>
+                                <span class="item-price">Rp 20.000</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="step-num">3</span>
+                    <h3>Metode Pembayaran</h3>
+                </div>
+                <div class="card-body">
+                    <div class="list-payment">
+                        <label class="item-payment">
+                            <input type="radio" name="payment" value="qris" required>
+                            <div class="payment-content">
+                                <span class="payment-name">QRIS (All Payment)</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="step-num">4</span>
+                    <h3>WhatsApp</h3>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="number" id="whatsapp" placeholder="Nomor WhatsApp" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Beli Sekarang</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

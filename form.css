@@ -1,0 +1,104 @@
+/* * C.R FORM STYLING - PRODUCTION READY
+ * Khusus untuk halaman konfirmasi (form.html)
+ */
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+.summary-item:hover {
+    border-color: var(--neon-blue);
+    background: rgba(0, 212, 255, 0.05);
+}
+
+.summary-item span:first-child {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.summary-item span:last-child {
+    color: #fff;
+    font-weight: 600;
+}
+
+.total-pay {
+    color: var(--neon-blue) !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+/* QRIS BOX - White Background for Scanability */
+#qr-container {
+    margin-top: 20px;
+    border: 1px solid var(--neon-blue);
+}
+
+.qr-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.qr-section img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.qr-section p {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* BUTTONS */
+#btn-confirm {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease forwards;
+}
